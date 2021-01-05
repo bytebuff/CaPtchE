@@ -1,6 +1,6 @@
 # CaPtchE简介
-CaPtchE是本地打码服务，识别英文数字类型的验证码，使用易语言编写，有可视化界面，操作简单，可以快速用于验证码识别场景！
-# CaPtchE使用方式
+CaPtchE是本地打码服务，识别英文数字类型的验证码，可以快速用于验证码识别场景！有易语言版本和Python版本！
+# CaPtchE易语言版本使用方式
 - 下载该项目
 - 双击exe执行文件
 - 点击启动服务
@@ -29,3 +29,4 @@ if __name__ == '__main__':
     session = HttpRequest()
     session.http_request_get()
 ```
+# CaPtchE的Python版本使用方式
