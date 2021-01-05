@@ -30,3 +30,29 @@ if __name__ == '__main__':
     session.http_request_get()
 ```
 # CaPtchE的Python版本使用方式
+- 下载该项目
+- GeckoCr直接运行bat终端就好了
+- 调用的话使用POST方式提交base64编码的图片
+- 示例代码：
+```python
+import requests
+
+
+class HttpRequest:
+
+    def __init__(self):
+        self.url = 'http://127.0.0.1:8001/gecko'
+
+        self.data = {
+            'img': "Base64后的图片"
+        }
+
+    def http_request_post(self):
+        response = requests.get(self.url, data=self.data)
+        print(response.text)
+
+
+if __name__ == '__main__':
+    session = HttpRequest()
+    session.http_request_post()
+```
